@@ -148,8 +148,14 @@ Django Peng - pjt73651@email.com
 
 
 
-HOME Work 1:
+## HOME Work 1:
 
-ai-translator:
+### query base64 image description
+![translator_run_img](homework_imgs/query_base64_image_description.png)
 
+
+### ai-translator:
 ![translator_run_img](homework_imgs/ai-translator_run_img.png)
+
+
+
