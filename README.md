@@ -146,3 +146,10 @@ Django Peng - pjt73651@email.com
 
 项目链接: https://github.com/DjangoPeng/openai-quickstart
 
+
+
+HOME Work 1:
+
+ai-translator:
+
+![translator_run_img](homework_imgs/ai-translator_run_img.png)

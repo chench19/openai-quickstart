@@ -24,4 +24,4 @@ if __name__ == "__main__":
 
     # 实例化 PDFTranslator 类，并调用 translate_pdf() 方法
     translator = PDFTranslator(model)
-    translator.translate_pdf(pdf_file_path, file_format, target_language='日文')
+    translator.translate_pdf(pdf_file_path, file_format, source_language=args.source_language, target_language=args.target_language)
