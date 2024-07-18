@@ -151,7 +151,7 @@ Django Peng - pjt73651@email.com
 ## HOME Work 1:
 
 ### query base64 image description
-![translator_run_img](homework_imgs/query_base64_image_description.png)
+![query_base64_image_description](homework_imgs/query_base64_image_description.png)
 
 
 ### ai-translator:
@@ -159,3 +159,5 @@ Django Peng - pjt73651@email.com
 
 
 
+### chains:
+![chains](homework_imgs/langchain-chains.png)
