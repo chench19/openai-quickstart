@@ -161,3 +161,7 @@ Django Peng - pjt73651@email.com
 
 ### chains:
 ![chains](homework_imgs/langchain-chains.png)
+
+
+### sales:
+![sales](homework_imgs/computer_sales.png)
