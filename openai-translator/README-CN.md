@@ -68,7 +68,7 @@ GLMModel:
   timeout: 300
 
 common:
-  book: "test/test.pdf"
+  book: "tests/test.pdf"
   file_format: "markdown"
 ```
 

@@ -6,14 +6,14 @@ from langchain_openai import ChatOpenAI
 from langchain_community.vectorstores import FAISS
 
 
-def initialize_sales_bot(vector_store_dir: str="real_estates_sale"):
-    db = FAISS.load_local(vector_store_dir, OpenAIEmbeddings())
+def initialize_sales_bot(vector_store_dir: str="langchain\\sales_chatbot\\real_estates_sale"):
+    db = FAISS.load_local(vector_store_dir, OpenAIEmbeddings(), allow_dangerous_deserialization=True)
     llm = ChatOpenAI(model_name="gpt-3.5-turbo", temperature=0)
     
     global SALES_BOT    
     SALES_BOT = RetrievalQA.from_chain_type(llm,
                                            retriever=db.as_retriever(search_type="similarity_score_threshold",
-                                                                     search_kwargs={"score_threshold": 0.8}))
+                                                                     search_kwargs={"score_threshold": 0.5}))
     # 返回向量数据库的检索结果
     SALES_BOT.return_source_documents = True
 
@@ -40,7 +40,7 @@ def sales_chat(message, history):
 def launch_gradio():
     demo = gr.ChatInterface(
         fn=sales_chat,
-        title="房产销售",
+        title="电脑配件销售",
         # retry_btn=None,
         # undo_btn=None,
         chatbot=gr.Chatbot(height=600),

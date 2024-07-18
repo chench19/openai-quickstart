@@ -29,7 +29,7 @@ class OpenAIModel(Model):
                     response = self.client.completions.create(
                         model=self.model,
                         prompt=prompt,
-                        max_tokens=150,
+                        max_tokens=15000,
                         temperature=0
                     )
                     translation = response.choices[0].text.strip()
