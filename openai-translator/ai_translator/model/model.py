@@ -4,8 +4,10 @@ class Model:
     def make_text_prompt(self, text: str, source_language: str, target_language: str) -> str:
         return f"{source_language}翻译为{target_language}：{text}"
 
-    def make_table_prompt(self, table: str, source_language: str, target_language: str) -> str:
-        return f"{source_language}翻译为{target_language}，保持间距（空格，分隔符），以表格形式返回：\n{table}"
+
+    def make_table_prompt(self, table: str, target_language: str) -> str:
+        # return f"翻译为{target_language}，保持间距（空格，分隔符），以表格形式返回：\n{table}"
+        return f"翻译为{target_language}，以空格和换行符表示表格：\n{table}"
 
     def translate_prompt(self, content, source_language: str, target_language: str) -> str:
         if content.content_type == ContentType.TEXT:
